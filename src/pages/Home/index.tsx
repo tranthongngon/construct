@@ -1,9 +1,10 @@
 import React from 'react';
+import BannerSlide from '../../components/BannerSilde';
 
 export default function Home() {
   return (
-    <div>
-      Home!
+    <div className='site__home'>
+      <BannerSlide/>
     </div>
   )
 }

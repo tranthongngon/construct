@@ -12,6 +12,9 @@ import Future from "./pages/Future";
 import Partner from "./pages/Partner";
 import Project from "./pages/Project";
 import Oriented from "./pages/Oriented";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export default function App() {
   return (

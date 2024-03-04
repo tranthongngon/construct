@@ -4,10 +4,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { styled } from "@mui/material/styles";
-import "./style.scss";
 
 export default function Header() {
-  const theme = useTheme();
   const Header = styled("header")(({ theme }) => ({
     background: theme.palette.primary.dark,
     padding: "10px 0",
@@ -15,19 +13,53 @@ export default function Header() {
     ".header__wrap": {
       display: "flex",
       justifyContent: "space-between",
-      alignItems: 'center',
+      alignItems: "center",
       ".header__logo": {
-        width: "100px",
+        width: "200px",
+        a: {
+          width: "100%",
+          display: "block",
+          img: {
+            width: "100%",
+            height: "40px",
+            objectFit: "contain",
+          },
+        },
       },
       ".header__left": {
-        '&-left': {
-          background: 'transparent',
-          width: '30px',
-          height: '30px',
-          border: 'none',
-          outline: 'none'
-        }
-      }
+        "&-btn": {
+          background: "transparent",
+          width: "30px",
+          height: "30px",
+          border: "none",
+          outline: "none",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          svg: {
+            fill: theme.palette.common.white,
+          },
+        },
+      },
+      ".header__languages": {
+        display: "flex",
+        alignItems: "center",
+        button: {
+          background: theme.palette.common.white,
+          border: "none",
+          padding: "2px 4px",
+          borderRadius: "3px",
+          lineHeight: 1,
+          cursor: "pointer",
+          margin: "5px",
+        },
+      },
+      "@media (max-width:575px)": {
+        ".header__logo": {
+          width: "150px",
+        },
+      },
     },
   }));
   return (

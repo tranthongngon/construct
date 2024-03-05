@@ -4,6 +4,6 @@ module.exports = {
   mode: 'production',
   devtool: 'source-map',
   plugins: [
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
   ]
 }

@@ -1,12 +1,14 @@
 import React from 'react';
-import BannerSlide from '../../components/BannerSilde';
-import BannerAbout from '../../components/BannerAbout';
+import SectionAbout from '../../components/SectionAbout';
+import SectionSilde from '../../components/SectionSilde';
+import SectionOriented from '../../components/SectionOriented';
 
 export default function Home() {
   return (
     <div className='site__home'>
-      <BannerSlide/>
-      <BannerAbout/>
+      <SectionSilde/>
+      <SectionAbout/>
+      <SectionOriented/>
     </div>
   )
 }

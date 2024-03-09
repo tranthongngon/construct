@@ -45,10 +45,16 @@ a:visited {
 .flex-column {
     flex-direction: column;
 }
+.f-title {
+    font-size: 64px;
+}
+.f-title::before {
+    content: "";
+}
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1170px;
     }
 }
 
@@ -65,5 +71,20 @@ a:visited {
 @media (min-width: 576px) and (max-width: 767px) {
     .container {
         max-width: 540px;
+    }
+}
+@media (max-width: 991px) {
+    .f-title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .f-title {
+        font-size: 45px;
+    }
+}
+@media (max-width: 991px) {
+    .f-title {
+        font-size: 40px;
     }
 }

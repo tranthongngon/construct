@@ -5,7 +5,7 @@ import { ISlide } from "../../models";
 import "./style.scss";
 import { styled } from "@mui/material";
 
-export default function BannerSlide() {
+export default function SectionSilde() {
   const Content = styled("div")(({ theme }) => ({
     background: theme.palette.primary.light,
     ".slide__title": {
@@ -15,11 +15,11 @@ export default function BannerSlide() {
       color: theme.palette.grey["300"],
     },
   }));
-  const Banner = styled("section")(({ theme }) => ({
+  const SectionSilde = styled("section")(({ theme }) => ({
     ".swiper-button-prev": {
       width: "45px",
       height: "45px",
-      background: "#fff",
+      background: theme.palette.common.white,
       borderRadius: "50%",
       cursor: "pointer",
       "&::after": {
@@ -30,7 +30,7 @@ export default function BannerSlide() {
     ".swiper-button-next": {
       width: "45px",
       height: "45px",
-      background: "#fff",
+      background: theme.palette.common.white,
       borderRadius: "50%",
       cursor: "pointer",
       "&::after": {
@@ -40,7 +40,7 @@ export default function BannerSlide() {
     },
   }));
   return (
-    <Banner className="banner__silde">
+    <SectionSilde className="banner__silde">
       <Swiper
         centeredSlides={true}
         loop={true}
@@ -70,6 +70,6 @@ export default function BannerSlide() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Banner>
+    </SectionSilde>
   );
 }

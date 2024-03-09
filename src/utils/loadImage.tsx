@@ -1,3 +1,3 @@
-export const loadImage = (nameImage: string) => {
-    return require(`../assets/images/${nameImage}`);
-}
+export const loadImage = (nameImage: string): string => {
+  return require(`../assets/images/${nameImage}`);
+};

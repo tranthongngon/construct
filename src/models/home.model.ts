@@ -9,3 +9,9 @@ export interface IOriented {
   excerpt: string;
   img: string;
 }
+
+export interface IFuture {
+  number: string,
+  title: string,
+  img: string,
+}

@@ -73,6 +73,11 @@ a:visited {
         max-width: 540px;
     }
 }
+@media (max-width: 1199px) {
+    .f-title {
+        font-size: 58px;
+    }
+}
 @media (max-width: 991px) {
     .f-title {
         font-size: 50px;

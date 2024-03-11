@@ -11,7 +11,18 @@ export interface IOriented {
 }
 
 export interface IFuture {
-  number: string,
-  title: string,
-  img: string,
+  number: string;
+  title: string;
+  img: string;
+}
+
+export interface IField {
+  img: string;
+  title: string;
+}
+
+export interface IProject {
+  title: string;
+  brief: string;
+  img: string;
 }

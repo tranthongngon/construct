@@ -6,7 +6,7 @@ import OrientedHeader from './OrientedHeader'
 
 export default function Oriented() {
     return (
-        <div style={{ padding: '30px' }} >
+        <div style={{ padding: '30px',height:'100vh' }} >
             <OrientedHeader />
             <Construction />
             <Construction />

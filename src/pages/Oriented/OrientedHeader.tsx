@@ -1,16 +1,5 @@
-import { Typography, styled } from '@mui/material';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { Grid, Typography, styled } from '@mui/material';
 import { useSpring, animated } from '@react-spring/web'
-
-const Content = styled('div')({
-    height: '130px',
-    color: '#16315e',
-    display: 'flex',
-    justifyContent: 'space-between',
-    h2: {
-        fontFamily: 'cursive !important',
-    }
-});
 
 export default function OrientedHeader() {
 
@@ -20,11 +9,17 @@ export default function OrientedHeader() {
     })
 
     return (
-        <>
-            <Content className="oriented__header">
-                <Typography variant="h2" > ĐỊNH HƯỚNG <br /> PHÁT TRIỂN </Typography>
-                <ArrowUpwardIcon style={{ fontSize: '40px', color: '#16315e', marginTop: '20px' }} />
-            </Content>
+        < >
+
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={4}>
+                    <Typography variant="h2" style={{color:"#16315e",fontWeight: 500}}> ĐỊNH HƯỚNG <br /> PHÁT TRIỂN </Typography>
+                </Grid>
+                <Grid item xs={12} md={8} style={{ display: 'flex', alignItems: 'center', fontStyle: 'italic' }}>
+                    <Typography variant="h6" > Tập trung vào việc phát triển các dự án xây dựng bền vững, kết hợp công nghệ tiên tiến và quy trình làm việc hiệu quả, nhằm đáp ứng nhu cầu của khách hàng và góp phần vào sự phát triển bền vững của cộng đồng.
+                    </Typography>
+                </Grid>
+            </Grid>
 
             <animated.div
                 style={{
@@ -35,7 +30,6 @@ export default function OrientedHeader() {
                     ...springs,
                 }}
             />
-
         </>
 
     )

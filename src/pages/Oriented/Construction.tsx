@@ -2,7 +2,6 @@ import { Grid, Typography, styled } from '@mui/material';
 import { useSpring, animated } from '@react-spring/web';
 import Image1 from '../../assets/images/Construction1.png';
 import Image2 from '../../assets/images/Construction2.png';
-// import "./style.scss";
 import "./style.css";
 export default function Construction() {
 

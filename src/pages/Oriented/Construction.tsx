@@ -124,16 +124,6 @@ export default function Construction() {
          
             </Grid >
 
-
-            <animated.div
-                style={{
-                    width: "100%",
-                    height: "1px",
-                    background: '#000',
-                    borderRadius: 1,
-                    ...springs,
-                }}
-            />
         </>
 
     )

@@ -9,8 +9,8 @@ export default function Oriented() {
         <div style={{ padding: '30px',height:'100vh' }} >
             <OrientedHeader />
             <Construction />
-            <Economy />
             <Invest />
+            <Economy />
             <Diversification />
         </div>
     )

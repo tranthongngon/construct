@@ -1,0 +1,104 @@
+.site__offcanvas {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transition: all 1s;
+  transform-origin: left;
+  overflow: hidden;
+  &.show {
+    left: 0;
+  }
+  .offcanvas {
+    &__wrap {
+      width: 320px;
+      height: 100%;
+    }
+    &__logo {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        width: 150px;
+        display: block;
+        img {
+          width: 100%;
+          height: 40px;
+          object-fit: contain;
+        }
+      }
+      button {
+        width: 20px;
+        height: 14px;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &__nav {
+      padding: 10px 20px;
+      &-menu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        li {
+          padding: 5px 0;
+        }
+        a {
+          font-weight: 500;
+          font-size: 15px;
+          transition: all 0.3s;
+          display: block;
+          text-decoration: none;
+          width: fit-content;
+        }
+      }
+    }
+    &__info {
+        padding: 10px 20px;
+        h5 {
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .gmail {
+            font-size: 14px;
+        }
+        &-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+        &-icon {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            &:nth-child(3) {
+                svg {
+                    height: 17px;
+                }
+            }
+        }
+    }
+  }
+}

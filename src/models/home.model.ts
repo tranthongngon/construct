@@ -26,3 +26,17 @@ export interface IProject {
   brief: string;
   img: string;
 }
+
+export interface IGallery {
+  img: string,
+  row?: number,
+  col?: number,
+}
+
+export interface INew {
+  img: string;
+  title: string;
+  date: string;
+  id: number;
+  brief: string;
+}

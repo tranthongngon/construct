@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import "./App.css";
 import { ThemeProvider } from "@mui/material/styles";
 import themes from "./themes/index.js";
@@ -15,13 +15,17 @@ import Oriented from "./pages/Oriented";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Footer from "./layouts/Footer";
+import OffCanvas from "./layouts/OffCanvas";
 
 export default function App() {
+  const [isOffCanvas, setIsOffCanvas] = useState<boolean>(false);
   return (
     <ThemeProvider theme={themes}>
-      <div>
+      <div className="site__app">
         <HashRouter>
-          <Header />
+          <Header handleClick={setIsOffCanvas}/>
+          <OffCanvas handleClick={setIsOffCanvas} isShow={isOffCanvas}/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -30,8 +34,9 @@ export default function App() {
             <Route path="/future" element={<Future />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/project" element={<Project />} />
-            <Route path="/Oriented" element={<Oriented />} />
+            <Route path="/oriented" element={<Oriented />} />
           </Routes>
+          <Footer/>
         </HashRouter>
       </div>
     </ThemeProvider>

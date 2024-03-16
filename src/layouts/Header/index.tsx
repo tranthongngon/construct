@@ -4,8 +4,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { styled } from "@mui/material/styles";
+type HeaderProps = {
+  handleClick: (isOffCanvas: boolean) => void
+}
 
-export default function Header() {
+export default function Header(props: HeaderProps) {
   const Header = styled("header")(({ theme }) => ({
     background: theme.palette.primary.dark,
     padding: "10px 0",
@@ -62,12 +65,17 @@ export default function Header() {
       },
     },
   }));
+  const showOffCanvas = () => {
+    document.body.classList.add('noScroll');
+    props.handleClick(true);
+    
+  }
   return (
     <Header className="header">
       <div className="container">
         <div className="header__wrap">
           <div className="header__left">
-            <button className="header__left-btn">
+            <button className="header__left-btn" onClick={showOffCanvas}>
               <MenuIcon color="primary" />
             </button>
           </div>

@@ -4,6 +4,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.noScroll {
+    height: 100%;
+    overflow: hidden;
+}
 html {
     font-size: 14px;
     font-family: "Playfair Display", serif;
@@ -51,6 +55,11 @@ a:visited {
 .f-title::before {
     content: "";
 }
+.site__app {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
 
 @media (min-width: 1200px) {
     .container {
@@ -77,19 +86,31 @@ a:visited {
     .f-title {
         font-size: 58px;
     }
+    .section {
+        margin-top: 80px;
+    }
 }
 @media (max-width: 991px) {
     .f-title {
         font-size: 50px;
+    }
+    .section {
+        margin-top: 70px;
     }
 }
 @media (max-width: 767px) {
     .f-title {
         font-size: 45px;
     }
+    .section {
+        margin-top: 60px;
+    }
 }
 @media (max-width: 991px) {
     .f-title {
         font-size: 40px;
+    }
+    .section {
+        margin-top: 55px;
     }
 }

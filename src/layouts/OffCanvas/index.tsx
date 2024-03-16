@@ -8,13 +8,20 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import PinterestIcon from '@mui/icons-material/Pinterest';
+import { useSpring, animated } from "@react-spring/web";
+
 type OffCanvasProps = {
     handleClick: (isOffCanvas: boolean) => void,
     isShow: boolean
 }
 
 export default function OffCanvas(props: OffCanvasProps) {
-  const OffCanvas = styled("div")(({theme}) => ({
+  const animationProps = useSpring({
+    opacity: props.isShow ? 1 : 0,
+    left: props.isShow ? '0px' : '-100%',
+    config: { tension: 0, friction: 20 },
+  });
+  const OffCanvas = styled(animated.div)(({theme}) => ({
     background: theme.palette.text.disabled,
     color: theme.palette.common.white,
     '.offcanvas__wrap' : {
@@ -52,8 +59,8 @@ export default function OffCanvas(props: OffCanvasProps) {
     props.handleClick(false);
   }
   return (
-    <OffCanvas className={props.isShow ? 'site__offcanvas show' : 'site__offcanvas'}>
-      <div className="offcanvas__wrap">
+    <OffCanvas className={props.isShow ? 'site__offcanvas' : 'site__offcanvas'} style={animationProps}>
+      <div className="offcanvas__wrap backInLeft">
         <div className="offcanvas__logo">
           <Link to="/">
             <img src={Logo} alt="construct" />

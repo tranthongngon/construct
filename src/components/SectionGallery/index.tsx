@@ -17,7 +17,7 @@ export default function SectionGallery() {
     >
       {data.map((item, index) => (
         <ImageListItem key={index}>
-          <img src={item.img} alt="construct" />
+          <img src={item.img} alt="construct" loading="lazy"/>
         </ImageListItem>
       ))}
     </ImageList>

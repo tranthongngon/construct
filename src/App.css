@@ -22,7 +22,8 @@ button {
     font-family: "Playfair Display", serif;
 }
 p,
-span {
+span,
+label {
     font-family: "Open Sans", sans-serif;
 }
 a:active,

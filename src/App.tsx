@@ -15,6 +15,8 @@ import Oriented from "./pages/Oriented";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-cards';
+import 'swiper/css/effect-creative';
 import Footer from "./layouts/Footer";
 import OffCanvas from "./layouts/OffCanvas";
 

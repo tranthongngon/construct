@@ -68,7 +68,6 @@ export default function Header(props: HeaderProps) {
   const showOffCanvas = () => {
     document.body.classList.add('noScroll');
     props.handleClick(true);
-    
   }
   return (
     <Header className="header">

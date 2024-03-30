@@ -1,0 +1,14 @@
+.partnerCard{
+    text-align: center;
+    /* background: antiquewhite; */
+    border: 5px solid black;
+}
+.partnerContent{
+    padding: 0 150px;
+}
+@media screen and (max-width: 1200px) {
+    .partnerContent{
+        padding: 0 50px;
+    }
+    
+}

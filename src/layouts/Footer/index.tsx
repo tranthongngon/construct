@@ -46,6 +46,9 @@ export default function Footer() {
               <li className="section__footer-nav-item">
                 <Link to="/oriented">Oriented</Link>
               </li>
+              <li className="section__footer-nav-item">
+                <Link to="/partner ">Partner </Link>
+              </li>
             </ul>
           </div>
         </div>

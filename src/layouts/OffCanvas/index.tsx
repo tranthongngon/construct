@@ -89,6 +89,9 @@ export default function OffCanvas(props: OffCanvasProps) {
             <li className="offcanvas__nav-item">
               <Link onClick={hideOffCanvas} to="/oriented">Oriented</Link>
             </li>
+            <li className="offcanvas__nav-item">
+                <Link onClick={hideOffCanvas} to="/partner ">Partner </Link>
+              </li>
           </ul>
         </div>
         <div className="offcanvas__info">

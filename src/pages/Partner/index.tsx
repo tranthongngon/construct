@@ -5,7 +5,7 @@ import Image_02 from '../../assets/images/partner03.jpg';
 import companyLogo01 from '../../assets/images/companyLogo01.jpg';
 import companyLogo02 from '../../assets/images/companyLogo02.jpg';
 import companyLogo03 from '../../assets/images/companyLogo03.jpg';
-import PartnerItem from "./partnerItem";
+import PartnerItem from "./PartnerItem";
 import "./style.css"
 export default function Partner() {
 

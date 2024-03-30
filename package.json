@@ -11,10 +11,12 @@
     "@react-spring/web": "^9.7.3",
     "@types/chroma-js": "^2.4.4",
     "chroma-js": "^2.4.2",
+    "formik": "^2.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.2",
-    "swiper": "^11.0.7"
+    "swiper": "^11.0.7",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
